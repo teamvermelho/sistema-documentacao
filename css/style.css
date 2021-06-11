@@ -343,7 +343,17 @@ input{
 
                 /*-----------------------------Recuperação de Senha---------------------------------*/
 
+.barra-vertical{
+	background-color: #467DDF; 
+	width: 2px;
+	size: 100px;
+}
 
+.botao-enviar{
+    margin-top:70px;
+    margin-right:220px;
+    margin-bottom:40px;
+}
 
                  /*----------------------------Cadstro e Edição-------------------------------------*/
 

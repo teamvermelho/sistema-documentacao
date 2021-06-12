@@ -12,7 +12,7 @@
         <title> Home -  Mobicare</title>
     </head>
 
-    <body>
+    <body onload="load()">
         <nav class="navegacao">
             <div class="navegacao__box">
                 <a class="navegacao__logo" href="home.html">
@@ -24,31 +24,7 @@
                 </a>
 
                 <div class="navegacao__itens" >
-                    <div>
-                        <ul>
-                            
-                            <li class="home">
-                                <a href="" target="_blank"
-                                    > Home </a
-                                >
-                            </li>
-                            <li class="cadastro-edicao">
-                                <a href="./cadastro-edicao.html" target="_blank"
-                                    >Cadastro e Edição </a
-                                >
-                            </li>
-                            <li class="consulta-exclusao">
-                                <a href="./consulta-exclusao.html" target="_blank"
-                                    >Consulta e Exclusão</a
-                                >
-                            </li>
-                            <li class="clone">
-                                <a href="./clone.html" target="_blank"
-                                    >Clone</a
-                                >
-                            </li>
-                        </ul>
-                    </div>
+                    
                 </div>
                
             </div>
@@ -61,21 +37,28 @@
 
         <main>
             <section>
-                <div class="container">
-                  
-                            <div class="botao">
-                                <button type="submit">Entrar</button>
-                           </div>
-                     
+                <div id="projects_list" class="container-list">
+                    <div id="table_list_header"></div>
+                    <div>
+                        <input id="search-input" type="text" class="search-input" placeholder="Busca...">
                     </div>
-                    <div id="relatorio">
-
-                    </div> 
-                </div>
-               
+                    <div id="table_list"></div>
+                </div>               
             </section>
-           
+            <!-- The Modal -->
+            <div id="modal" class="modal">
+                <!-- Modal content -->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <span id="close" class="close">&times;</span>
+                        <h2 id="modal_header"></h2>
+                    </div>
+                    <div id="project-content" class="modal-body">
+                    </div>
+                </div>
+            </div>
         </main>
+
         <footer class="rodape">
             <div class="rodape__principal"></div>
                                
@@ -85,6 +68,6 @@
             </div>
         </footer>
 
-       
+        <script src="../script/projects.js"></script>
     </body>
 </html>

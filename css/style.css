@@ -610,6 +610,17 @@ input:checked + .slider:before {
     .modal-button:hover{
         background-color: #008CBA;
     }
+.barra-vertical{
+	background-color: #467DDF; 
+	width: 2px;
+	size: 100px;
+}
+
+.botao-enviar{
+    margin-top:70px;
+    margin-right:220px;
+    margin-bottom:40px;
+}
 
     .modal-button-delete:hover{
         background-color: #DC6418;
@@ -671,3 +682,4 @@ input:checked + .slider:before {
         padding: 5px;
         user-select: none;
     }
+                   /*------------------------------Clone--------------------------------------------*/
